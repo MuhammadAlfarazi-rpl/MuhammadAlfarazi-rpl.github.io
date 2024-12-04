@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ul li{
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    font-size: smaller;
+    color: rgb(255, 255, 255);
+}
+
+.nested-article ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin: 0; 
+}
+
+.nested-article ul li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px; 
+
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    color: rgb(255, 255, 255);
+}
+
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding-right: 20px;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 370;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+
+.home-home {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.greeting {
+    padding-top: 3em;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    margin-top: 1px;
+    margin-left: 25px;
+    transform: translateX(-25%);
+    margin-bottom: 25px;
+}
+
+.article-main {
+    background-color: #201f1f;
+    padding: 12px;
+    text-wrap: auto;
+    margin-right: 1px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: all ease 0.2s;
+    margin-bottom: 15px;
+    margin-right: 1.5em;
+    margin-left: 12px;
+    position:relative;
+}
+
+main .article-main:hover {
+    background-color:#2b2a2a;
+}
+
+main .article-main {
+    margin-left: -14em;
+}
+
+.nested-article {
+    margin-top: 10px;
+    background-color: #3d3c3c;
+    padding: 7px;
+    border-radius: 3px;
+    transition: all ease 0.2s;
+}
+
+.nested-article:hover {
+    transform: scale(1.01);
+}
+
+body {
+    background-color: #0A0A0A;
+    line-height: 1.5;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.icon-cont {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #0A0A0A;
+    height: 60px; 
+    border-bottom: 1px solid #ffff;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+
+}
+
+.icon-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border: 1px solid #0A0A0A;
+    background-color: #0A0A0A;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.header-name:hover {
+    background-color: #222222;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 30px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.burger div {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger.open div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 2px);
+    width: 100%;
+}
+
+.burger.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    width: 100%;
+}
+
+
+.user {
+    position: absolute;
+    right: 25px;
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.user:hover {
+    transform: scale(1.02);
+}
+
+.user img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    
+}
+
+aside {
+    width: 250px;
+    background-color: #0A0A0A;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    transform: translateX(-100%);
+    top: 60px;
+    transition: transform 0.4s ease;
+}
+
+main {
+    margin-left: 220px; 
+    padding: 20px;
+    width: calc(100% - 220px);
+    transition: margin-left 0.4s ease;
+}
+
+main.full-width {
+    margin-left: 0;
+}
+
+aside h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 450;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+aside h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding-top: 12px;
+    padding-bottom: 1px;
+}
+
+aside article {
+    background-color: #201f1f;
+    padding: 12px;
+    text-wrap: auto;
+    margin-top: 2px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: all ease 0.2s;
+    margin-bottom: 10px;
+}
+
+aside ol li{
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    font-size: smaller;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    text-decoration: underline;
+    margin-bottom: 2px;
+}
+
+aside article:hover {
+    transform: scale(1.01);
+}
+
+.add {
+    margin-top: 12em;
+}
+
+aside.visible {
+    transform: translateX(0); 
+}
+
+.add:hover {
+    background-color: #353535;
+}
+
+.article-main, .greeting {
+    transition: all 0.4s ease;
+}
+
+.full-width .article-main,
+.full-width .greeting {
+    transform: translateX(3%);
+    margin-left: 3px;
+    overflow: hidden;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-out;
+    overflow-y: scroll;
+}
+
+.popup-content {
+    background-color: #252525;
+    padding: 20px;
+    width: 320px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    color: white;
+    animation: scaleUp 0.3s ease-out;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff5c5c;
+    transition: color 0.3s;
+}
+.close-btn:hover {
+    color: #ff8585;
+}
+
+.popup-content input[type="text"],
+.popup-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #ddd;
+}
+
+.popup-content button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #383838;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.popup-content button:hover {
+    background-color: #4e4e4e;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.9); }
+    to { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+.settings-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.settings-icon:hover {
+    color: #ff5c5c;
+}
+
+.popup-menu {
+    display: none; 
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    background-color: #424242;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    z-index: 10;
+    font-family: "Poppins", sans-serif;
+    transition: all ease 0.3s;
+}
+
+.popup-menu p {
+    margin: 5px 0;
+    cursor: pointer;
+    transition: color ease 0.3s;
+}
+
+.popup-menu p:hover {
+    color: #ff5c5c; 
+}
+
+.popup-menu.fade-in {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.3s forwards;
+}
+
+.popup-menu.fade-out {
+    opacity: 0;
+    animation: fadeOut 0.3s forwards;
+}
+
+a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
